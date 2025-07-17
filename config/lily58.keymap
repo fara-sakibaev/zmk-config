@@ -18,7 +18,8 @@
                 <&kp LEFT_SHIFT &kp LEFT_COMMAND>,
                 <&macro_tap>,
                 <&kp SPACE>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LEFT_SHIFT &kp LEFT_COMMAND>;
 
             label = "SHORTCAT";
         };
