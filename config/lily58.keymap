@@ -15,11 +15,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 150>,
                 <&kp LEFT_SHIFT>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 150>,
                 <&kp LEFT_COMMAND>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 150>,
                 <&kp SPACE>;
 
             label = "SHORTCAT";
