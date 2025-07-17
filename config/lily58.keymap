@@ -13,7 +13,15 @@
         shortcat: shortcat {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp LEFT_COMMAND &kp SPACE>;
+            bindings =
+                <&macro_tap>,
+                <&macro_wait_time 50>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp LEFT_COMMAND>,
+                <&macro_wait_time 50>,
+                <&kp SPACE>;
+
             label = "SHORTCAT";
         };
     };
