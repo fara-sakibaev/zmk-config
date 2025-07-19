@@ -27,9 +27,9 @@
     };
 
     behaviors {
-        mouse_key_press: mouse_key_press {
+        mkp: mkp {
             compatible = "zmk,behavior-mouse-key-press";
-            label = "MOUSE_KEY_PRESS";
+            label = "MKP";
             #binding-cells = <1>;
         };
     };
