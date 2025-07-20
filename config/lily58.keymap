@@ -60,7 +60,7 @@
 &trans     &kp C_BRI_DN  &kp C_BRI_UP  &kp C_MUTE     &kp C_VOL_DN      &kp C_VOL_UP                             &trans     &trans     &trans           &trans    &trans    &trans
 &kp F1     &kp F2        &kp F3        &kp F4         &kp F5            &kp F6                                   &kp F7     &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
 &kp GRAVE  &kp EXCL      &kp AT        &kp HASH       &kp DOLLAR        &kp PRCNT                                &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&trans     &trans        &trans        &kp LESS_THAN  &kp GREATER_THAN  &trans        &mkp MB1    &trans         &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
+&trans     &trans        &trans        &kp LESS_THAN  &kp GREATER_THAN  &mkp LCLK     &mkp MB1    &trans         &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
                                        &trans         &trans            &trans        &trans      &kp BACKSPACE  &trans     &trans     &trans
             >;
 
