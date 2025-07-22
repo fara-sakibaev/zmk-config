@@ -77,9 +77,9 @@
 
             bindings = <
 &studio_unlock  &trans  &trans  &trans  &trans  &trans                           &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans          &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                           &kp N6       &kp N7        &kp N8        &kp N9        &kp N0        &trans
-&trans          &trans  &trans  &trans  &trans  &shortcat                        &kp LEFT     &kp DOWN      &kp UP        &kp RIGHT     &trans        &trans
-&trans          &trans  &trans  &trans  &trans  &trans     &mkp MB1      &trans  &kp KP_PLUS  &kp MINUS     &kp EQUAL     &kp LBKT      &kp RBKT      &kp BSLH
+&trans          &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                           &trans       &trans        &trans        &trans        &trans        &trans
+&trans          &kp N6  &kp N7  &kp N8  &kp N9  &kp N0                           &kp LEFT     &kp DOWN      &kp UP        &kp RIGHT     &trans        &trans
+&trans          &trans  &trans  &trans  &trans  &shortcat  &mkp MB1      &trans  &kp KP_PLUS  &kp MINUS     &kp EQUAL     &kp LBKT      &kp RBKT      &kp BSLH
                                 &trans  &trans  &trans     &kp ESCAPE    &trans  &trans       &trans        &trans
             >;
 
