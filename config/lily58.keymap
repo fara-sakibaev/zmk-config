@@ -96,13 +96,13 @@
             >;
         };
 
-        mouse_scroll_layer {
+        page_scroll_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans          &trans        &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans          &trans        &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans        &trans           &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans         &trans       &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans         &trans       &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &msc SCRL_LEFT  &kp PAGE_DOWN  &kp PAGE_UP  &msc SCRL_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans         &trans       &trans           &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans          &trans         &trans
             >;
         };
     };
