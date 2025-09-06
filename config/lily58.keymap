@@ -36,6 +36,42 @@
 
             label = "FULL_SCREENSHOT";
         };
+
+        selecred_screenshot: selecred_screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_SHIFT &kp LGUI &kp NUMBER_4>,
+                <&macro_release>,
+                <&kp LCTRL &kp LSHFT &kp LGUI &kp NUMBER_4>;
+
+            label = "SELECRED_SCREENSHOT";
+        };
+
+        full_file_screenshot: full_file_screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT &kp LGUI &kp NUMBER_3>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT &kp LGUI &kp NUMBER_3>;
+
+            label = "FULL_FILE_SCREENSHOT";
+        };
+
+        selected_file_screenshot: selected_file_screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT &kp LGUI &kp NUMBER_4>,
+                <&macro_press>,
+                <&kp LSHFT &kp LEFT_GUI &kp NUMBER_4>;
+
+            label = "SELECTED_FILE_SCREENSHOT";
+        };
     };
 
     keymap {
@@ -88,11 +124,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans                           &trans            &trans     &trans     &trans     &trans     &trans
-&trans  &kp N1  &kp N2     &kp N3     &kp N4     &kp N5                           &full_screenshot  &trans     &trans     &trans     &trans     &trans
-&trans  &kp N6  &kp N7     &kp N8     &kp N9     &kp N0                           &kp LEFT          &kp DOWN   &kp UP     &kp RIGHT  &kp GRAVE  &trans
-&trans  &trans  &kp GRAVE  &kp MINUS  &kp EQUAL  &shortcat  &mkp MB1      &trans  &kp KP_PLUS       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT   &trans
-                           &trans     &trans     &trans     &kp ESCAPE    &trans  &trans            &trans     &trans
+&trans  &trans  &trans     &trans     &trans     &trans                           &trans            &trans                     &trans                 &trans                     &trans  &trans
+&trans  &kp N1  &kp N2     &kp N3     &kp N4     &kp N5                           &full_screenshot  &selected_file_screenshot  &full_file_screenshot  &selected_file_screenshot  &trans  &trans
+&trans  &kp N6  &kp N7     &kp N8     &kp N9     &kp N0                           &kp LEFT          &kp DOWN                   &kp UP                 &kp RIGHT                  &trans  &trans
+&trans  &trans  &kp GRAVE  &kp MINUS  &kp EQUAL  &shortcat  &mkp MB1      &trans  &kp KP_PLUS       &trans                     &trans                 &trans                     &trans  &trans
+                           &trans     &trans     &trans     &kp ESCAPE    &trans  &trans            &trans                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -105,16 +141,6 @@
 &trans  &bt BT_CLR    &trans        &trans        &trans        &trans                          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans        &trans
 &trans  &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans          &trans          &trans        &trans           &trans        &trans
                                     &trans        &trans        &trans        &trans    &trans  &trans          &trans          &trans
-            >;
-        };
-
-        page_scroll_layer {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans         &trans       &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans         &trans       &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &msc SCRL_LEFT  &kp PAGE_DOWN  &kp PAGE_UP  &msc SCRL_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans         &trans       &trans           &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans          &trans         &trans
             >;
         };
     };
