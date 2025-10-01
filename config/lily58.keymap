@@ -102,9 +102,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp F1 &kp LEFT_ALT>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp F1>,
                 <&macro_release>,
-                <&kp F1 &kp LEFT_ALT>;
+                <&kp LEFT_ALT>;
 
             label = "IDEA_OPEN_IN_PROJECT";
         };
