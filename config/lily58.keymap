@@ -100,7 +100,11 @@
         idea_open_in_project: idea_open_in_project {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp F1 &kp LEFT_ALT>, <&macro_release>;
+            bindings =
+                <&macro_press>,
+                <&kp F1 &kp LEFT_ALT>,
+                <&macro_release>,
+                <&kp F1 &kp LEFT_ALT>;
 
             label = "IDEA_OPEN_IN_PROJECT";
         };
