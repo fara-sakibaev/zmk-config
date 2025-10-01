@@ -96,6 +96,14 @@
 
             label = "RECTANGLE_RIGHT_SCREEN";
         };
+
+        idea_open_in_project: idea_open_in_project {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp F1 &kp LEFT_ALT>, <&macro_release>;
+
+            label = "IDEA_OPEN_IN_PROJECT";
+        };
     };
 
     keymap {
@@ -129,11 +137,11 @@
             //                       |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans  &trans    &trans  &trans    &trans      &trans                              &trans     &trans     &trans           &trans    &trans         &trans
-&trans  &kp F2    &kp F3  &kp F4    &kp F5      &kp F6                              &kp F7     &kp F8     &kp F9           &kp F10   &kp F11        &trans
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PRCNT                           &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR       &trans
-&trans  &trans    &trans  &trans    &kp TAB     &kp F1     &trans    &mkp MB2       &kp F12    &kp MINUS  &kp KP_PLUS      &kp PIPE  &kp BACKSLASH  &trans
-                          &trans    &trans      &trans     &trans    &kp BACKSPACE  &trans     &trans     &trans
+&trans  &trans    &trans  &trans    &trans      &trans                              &trans     &trans                 &trans           &trans    &trans         &trans
+&trans  &kp F2    &kp F3  &kp F4    &kp F5      &kp F6                              &kp F7     &kp F8                 &kp F9           &kp F10   &kp F11        &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PRCNT                           &kp CARET  &kp AMPS               &kp KP_MULTIPLY  &kp LPAR  &kp RPAR       &trans
+&trans  &trans    &trans  &trans    &kp TAB     &kp F1     &trans    &mkp MB2       &kp F12    &idea_open_in_project  &trans           &trans    &kp BACKSLASH  &trans
+                          &trans    &trans      &trans     &trans    &kp BACKSPACE  &trans     &trans                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -148,11 +156,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans                           &trans            &trans                     &trans                 &trans                     &trans  &trans
-&trans  &kp N1  &kp N2     &kp N3     &kp N4     &kp N5                           &full_screenshot  &selected_file_screenshot  &full_file_screenshot  &selected_file_screenshot  &trans  &trans
-&trans  &kp N6  &kp N7     &kp N8     &kp N9     &kp N0                           &kp LEFT          &kp DOWN                   &kp UP                 &kp RIGHT                  &trans  &trans
-&trans  &trans  &kp GRAVE  &kp MINUS  &kp EQUAL  &shortcat  &mkp MB1      &trans  &kp KP_PLUS       &trans                     &trans                 &trans                     &trans  &trans
-                           &trans     &trans     &trans     &kp ESCAPE    &trans  &trans            &trans                     &trans
+&trans  &trans    &trans     &trans                  &trans                   &trans                           &trans    &trans    &trans  &trans     &trans  &trans
+&trans  &kp N1    &kp N2     &kp N3                  &kp N4                   &kp N5                           &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &trans
+&trans  &kp PIPE  &kp GRAVE  &kp MINUS               &kp EQUAL                &kp UNDER                        &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans  &trans    &trans     &rectangle_left_screen  &rectangle_right_screen  &shortcat  &mkp MB1      &trans  &trans    &trans    &trans  &trans     &trans  &trans
+                             &trans                  &trans                   &trans     &kp ESCAPE    &trans  &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -160,11 +168,11 @@
 
         mmv_n_fn_layer {
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans                          &trans                  &trans                   &trans        &trans           &trans        &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &kp C_BRI_DN            &kp C_BRI_UP             &kp C_MUTE    &kp C_VOL_DN     &kp C_VOL_UP  &trans
-&trans  &bt BT_CLR    &trans        &trans        &trans        &trans                          &mmv MOVE_LEFT          &mmv MOVE_DOWN           &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans        &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &trans    &trans  &rectangle_left_screen  &rectangle_right_screen  &trans        &trans           &trans        &trans
-                                    &trans        &trans        &trans        &trans    &trans  &trans                  &trans                   &trans
+&trans  &trans        &trans        &trans        &trans        &trans                          &trans        &trans        &trans      &trans        &trans        &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &kp C_BRI_DN  &kp C_BRI_UP  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans
+&trans  &bt BT_CLR    &trans        &trans        &trans        &trans                          &trans        &trans        &trans      &trans        &trans        &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans        &trans        &trans      &trans        &trans        &trans
+                                    &trans        &trans        &trans        &trans    &trans  &trans        &trans        &trans
             >;
         };
     };
