@@ -110,6 +110,20 @@
 
             label = "IDEA_OPEN_IN_PROJECT";
         };
+
+        idea_ubuntu_create_new: idea_ubuntu_create_new {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp INSERT>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "IDEA_UBUNTU_CREATE_NEW";
+        };
     };
 
     keymap {
@@ -143,10 +157,10 @@
             //                       |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans  &trans    &trans  &trans    &trans      &trans                              &trans     &trans                 &trans           &trans    &trans         &trans
-&trans  &kp F2    &kp F3  &kp F4    &kp F5      &kp F6                              &kp F7     &kp F8                 &kp F9           &kp F10   &kp F11        &trans
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PRCNT                           &kp CARET  &kp AMPS               &kp KP_MULTIPLY  &kp LPAR  &kp RPAR       &trans
-&trans  &trans    &trans  &trans    &kp TAB     &kp F1     &trans    &mkp MB2       &kp F12    &idea_open_in_project  &trans           &trans    &kp BACKSLASH  &trans
+&trans  &trans    &trans  &trans    &trans      &trans                              &trans     &trans                 &trans                   &trans    &trans         &trans
+&trans  &kp F2    &kp F3  &kp F4    &kp F5      &kp F6                              &kp F7     &kp F8                 &kp F9                   &kp F10   &kp F11        &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PRCNT                           &kp CARET  &kp AMPS               &kp KP_MULTIPLY          &kp LPAR  &kp RPAR       &trans
+&trans  &trans    &trans  &trans    &kp TAB     &kp F1     &trans    &mkp MB2       &kp F12    &idea_open_in_project  &idea_ubuntu_create_new  &trans    &kp BACKSLASH  &trans
                           &trans    &trans      &trans     &trans    &kp BACKSPACE  &trans     &trans                 &trans
             >;
 
