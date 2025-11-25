@@ -135,7 +135,7 @@
             bindings = <
 &trans  &trans           &trans            &trans     &trans         &trans                                                                    &trans                &trans         &trans        &trans                &trans                 &trans
 &trans  &kp EXCLAMATION  &kp AT_SIGN       &kp POUND  &kp DOLLAR     &kp PERCENT                                                               &kp CARET             &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &trans           &kp SINGLE_QUOTE  &trans     &kp SEMICOLON  &shortcat                                                                 &kp COLON             &kp QUESTION   &trans        &trans                &trans                 &trans
+&trans  &trans           &kp SINGLE_QUOTE  &kp TAB    &kp SEMICOLON  &shortcat                                                                 &kp COLON             &kp QUESTION   &trans        &trans                &trans                 &trans
 &trans  &trans           &trans            &trans     &trans         &idea_open_in_project  &rectangle_left_screen    &rectangle_right_screen  &selecred_screenshot  &trans         &trans        &trans                &trans                 &trans
                                            &trans     &trans         &trans                 &trans                    &trans                   &trans                &trans         &trans
             >;
@@ -146,8 +146,8 @@
         compatible = "zmk,conditional-layers";
 
         layer_3_condition {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <3 2>;
+            then-layer = <4>;
         };
     };
 };
