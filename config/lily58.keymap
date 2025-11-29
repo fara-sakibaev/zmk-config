@@ -391,9 +391,9 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        layer_3_condition {
-            if-layers = <3 2>;
-            then-layer = <4>;
+        layer_3 {
+            if-layers = <1>;
+            then-layer = <2>;
         };
     };
 };
