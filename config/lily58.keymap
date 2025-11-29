@@ -373,7 +373,7 @@
 &trans  &trans  &trans  &vim_e            &trans  &trans                                  &trans          &vim_u          &trans        &trans           &trans  &trans
 &trans  &trans  &trans  &vim_dd_behavior  &trans  &vim_gg_behavior                        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
 &trans  &trans  &trans  &trans            &tog 5  &vim_b            &trans        &trans  &trans          &trans          &trans        &trans           &trans  &trans
-                        &trans            &trans  &trans            &kp ESCAPE    &trans  &trans          &trans          &trans
+                        &trans            &trans  &trans            &kp ESCAPE    &to 0   &trans          &trans          &trans
             >;
         };
 
@@ -383,7 +383,7 @@
 &trans  &trans  &trans  &vim_visual_e  &trans  &trans                                                                   &trans            &trans            &trans          &trans             &trans  &trans
 &trans  &trans  &trans  &trans         &trans  &trans                                                                   &vim_visual_left  &vim_visual_down  &vim_visual_up  &vim_visual_right  &trans  &trans
 &trans  &trans  &trans  &trans         &trans  &vim_visual_b  &vim_visual_blank_line_up    &vim_visual_blank_line_down  &trans            &trans            &trans          &trans             &trans  &trans
-                        &trans         &trans  &trans         &trans                       &trans                       &trans            &trans            &trans
+                        &trans         &trans  &trans         &trans                       &to 0                        &trans            &trans            &trans
             >;
         };
     };
