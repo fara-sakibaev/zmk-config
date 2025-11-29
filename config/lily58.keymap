@@ -87,6 +87,232 @@
 
             label = "IDEA_UBUNTU_CREATE_NEW";
         };
+
+        lang_toggle: lang_toggle {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "LANG_TOGGLE";
+        };
+
+        vim_dd: vim_dd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp BACKSPACE>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND>;
+
+            label = "VIM_DD";
+        };
+
+        vim_G: vim_G {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp DOWN_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND>;
+
+            label = "VIM_G";
+        };
+
+        vim_gg: vim_gg {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp DOWN_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND>;
+
+            label = "VIM_GG";
+        };
+
+        vim_e: vim_w {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp RIGHT_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "VIM_W";
+        };
+
+        vim_b: vim_b {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "VIM_B";
+        };
+
+        vim_u: vim_u {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp Z>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND>;
+
+            label = "VIM_U";
+        };
+
+        vim_visual_left: vim_visual_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            label = "VIM_VISUAL_LEFT";
+        };
+
+        vim_visual_down: vim_visual_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp DOWN_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            label = "VIM_VISUAL_DOWN";
+        };
+
+        vim_visual_up: vim_visual_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp UP_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            label = "VIM_VISUAL_UP";
+        };
+
+        vim_visual_right: vim_visual_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp RIGHT_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            label = "VIM_VISUAL_RIGHT";
+        };
+
+        vim_visual_e: vim_visual_e {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT &kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp RIGHT_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT &kp LEFT_ALT>;
+
+            label = "VIM_VISUAL_E";
+        };
+
+        vim_visual_b: vim_visual_b {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT &kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT &kp LEFT_ALT>;
+
+            label = "VIM_VISUAL_B";
+        };
+
+        vim_visual_blank_line_up: vim_visual_blank_line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT &kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp UP_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT &kp LEFT_ALT>;
+
+            label = "VIM_VISUAL_BLANK_LINE";
+        };
+
+        vim_visual_blank_line_down: vim_visual_blank_line_dow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT &kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp DOWN_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT &kp LEFT_ALT>;
+
+            label = "VIM_VISUAL_BLANK_LINE_DOW";
+        };
+    };
+
+    behaviors {
+        vim_dd_behavior: vim_dd_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "VIM_DD_BEHAVIOR";
+            #binding-cells = <0>;
+            bindings = <&kp D>, <&vim_dd>;
+        };
+
+        vim_gg_behavior: vim_gg_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "VIM_GG_BEHAVIOR";
+            #binding-cells = <0>;
+            bindings = <&vim_G>, <&vim_gg>;
+        };
     };
 
     keymap {
@@ -123,11 +349,11 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                        &trans        &trans        &trans        &trans        &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans                        &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                        &kp F6        &kp F7        &kp F8        &kp F9        &kp F10          &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LCTRL    &kp F12  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp RIGHT_SHIFT  &trans
-                        &trans  &trans  &trans  &trans       &trans   &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans                         &trans        &trans        &trans        &trans        &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans                         &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                         &kp F6        &kp F7        &kp F8        &kp F9        &kp F10          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LCTRL     &kp F12  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp RIGHT_SHIFT  &trans
+                        &trans  &trans  &trans  &kp ESCAPE    &trans   &trans        &trans        &trans
             >;
         };
 
@@ -135,9 +361,29 @@
             bindings = <
 &trans  &trans           &trans            &trans     &trans         &trans                                                                    &trans                &trans         &trans        &trans                &trans                 &trans
 &trans  &kp EXCLAMATION  &kp AT_SIGN       &kp POUND  &kp DOLLAR     &kp PERCENT                                                               &kp CARET             &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &trans           &kp SINGLE_QUOTE  &kp TAB    &kp SEMICOLON  &shortcat                                                                 &kp COLON             &kp QUESTION   &trans        &trans                &trans                 &trans
-&trans  &trans           &trans            &trans     &trans         &idea_open_in_project  &rectangle_left_screen    &rectangle_right_screen  &selecred_screenshot  &trans         &trans        &trans                &trans                 &trans
+&trans  &tog 4           &kp SINGLE_QUOTE  &kp TAB    &kp SEMICOLON  &shortcat                                                                 &kp COLON             &kp QUESTION   &lang_toggle  &trans                &trans                 &trans
+&trans  &kp CAPSLOCK     &trans            &trans     &trans         &idea_open_in_project  &rectangle_left_screen    &rectangle_right_screen  &selecred_screenshot  &trans         &trans        &trans                &trans                 &trans
                                            &trans     &trans         &trans                 &trans                    &trans                   &trans                &trans         &trans
+            >;
+        };
+
+        vim {
+            bindings = <
+&trans  &trans  &trans  &trans            &trans  &trans                                  &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &trans  &trans  &vim_e            &trans  &trans                                  &trans          &vim_u          &trans        &trans           &trans  &trans
+&trans  &trans  &trans  &vim_dd_behavior  &trans  &vim_gg_behavior                        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &trans  &trans            &tog 5  &vim_b            &trans        &trans  &trans          &trans          &trans        &trans           &trans  &trans
+                        &trans            &trans  &trans            &kp ESCAPE    &trans  &trans          &trans          &trans
+            >;
+        };
+
+        visual_vim {
+            bindings = <
+&trans  &trans  &trans  &trans         &trans  &trans                                                                   &trans            &trans            &trans          &trans             &trans  &trans
+&trans  &trans  &trans  &vim_visual_e  &trans  &trans                                                                   &trans            &trans            &trans          &trans             &trans  &trans
+&trans  &trans  &trans  &trans         &trans  &trans                                                                   &vim_visual_left  &vim_visual_down  &vim_visual_up  &vim_visual_right  &trans  &trans
+&trans  &trans  &trans  &trans         &trans  &vim_visual_b  &vim_visual_blank_line_up    &vim_visual_blank_line_down  &trans            &trans            &trans          &trans             &trans  &trans
+                        &trans         &trans  &trans         &trans                       &trans                       &trans            &trans            &trans
             >;
         };
     };
