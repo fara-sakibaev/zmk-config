@@ -1,3 +1,4 @@
+# This repository does not provide additional boards/shields.
+# Keep module registration minimal to avoid interfering with BOARD lookup.
 build:
-  settings:
-    board_root: .
+  settings: {}
