@@ -340,8 +340,8 @@
         right_hand_nums {
             bindings = <
 &trans  &trans        &trans        &trans        &trans        &trans                                           &trans          &trans          &trans        &trans           &trans        &trans
-&kp F1  &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                           &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0  &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans        &trans
+&kp F1  &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                           &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0  &kp MINUS
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp EQUAL     &trans
 &trans  &trans        &trans        &trans        &trans        &trans        &trans    &rectangle_right_screen  &trans          &trans          &trans        &trans           &trans        &trans
                                     &trans        &trans        &trans        &trans    &kp BACKSPACE            &trans          &trans          &trans
             >;
