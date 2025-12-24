@@ -381,21 +381,21 @@
 
         right_hand_nums {
             bindings = <
-&trans  &trans                    &trans            &trans                 &trans                 &trans                                     &trans          &trans          &trans        &trans           &trans        &trans
-&kp F1  &kp F2                    &kp F3            &kp F4                 &kp F5                 &kp F6                                     &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0  &kp MINUS
-&trans  &idea_create_new_scratch  &idea_create_new  &idea_refactor_rename  &idea_open_in_project  &trans                                     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp EQUAL     &trans
-&trans  &trans                    &trans            &trans                 &trans                 &trans  &trans    &rectangle_right_screen  &trans          &trans          &trans        &trans           &trans        &trans
-                                                    &trans                 &trans                 &trans  &trans    &kp BACKSPACE            &trans          &trans          &trans
+&trans  &trans                    &trans            &trans                 &trans                 &trans                           &trans          &trans          &trans        &trans           &trans        &trans
+&kp F1  &kp F2                    &kp F3            &kp F4                 &kp F5                 &kp F6                           &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0  &kp MINUS
+&trans  &idea_create_new_scratch  &idea_create_new  &idea_refactor_rename  &idea_open_in_project  &trans                           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp EQUAL     &trans
+&trans  &trans                    &trans            &trans                 &trans                 &trans  &trans    &kp BACKSPACE  &trans          &trans          &trans        &trans           &trans        &trans
+                                                    &trans                 &trans                 &trans  &trans    &trans         &trans          &trans          &trans
             >;
         };
 
         left_hand_nums {
             bindings = <
-&trans        &trans        &trans        &trans        &trans        &trans                                          &trans                &trans  &trans  &trans   &trans   &trans
-&kp GRAVE     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                    &kp F7                &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&kp CAPSLOCK  &trans        &trans        &trans        &trans        &shortcat                                       &trans                &trans  &trans  &trans   &trans   &trans
-&trans        &trans        &trans        &trans        &trans        &trans        &rectangle_left_screen    &trans  &selecred_screenshot  &trans  &trans  &trans   &trans   &trans
-                                          &trans        &trans        &trans        &kp ESCAPE                &trans  &trans                &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &trans                                                           &trans                &trans  &trans  &trans   &trans   &trans
+&kp GRAVE     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                                     &kp F7                &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&kp CAPSLOCK  &trans        &trans        &trans        &trans        &shortcat                                                        &trans                &trans  &trans  &trans   &trans   &trans
+&trans        &trans        &trans        &trans        &trans        &trans        &rectangle_left_screen    &rectangle_right_screen  &selecred_screenshot  &trans  &trans  &trans   &trans   &trans
+                                          &trans        &trans        &trans        &kp ESCAPE                &trans                   &trans                &trans  &trans
             >;
         };
 
