@@ -365,7 +365,6 @@
             tapping-term-ms = <200>;
             require-prior-idle-ms = <125>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <31>;
         };
 
         homerow_f_left_shift: homerow_f_left_shift {
@@ -377,7 +376,6 @@
             tapping-term-ms = <200>;
             require-prior-idle-ms = <125>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <28>;
         };
     };
 
